@@ -1,3 +1,4 @@
+/* Base reset */
 *,
 *::before,
 *::after {
@@ -5,50 +6,47 @@
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: 'Georgia', serif;
-  background: #121212;
-  color: #e0e0e0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-  line-height: 1.6;
+  margin: 3rem auto;
+  max-width: 700px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  background: #fff;
+  line-height: 1.4;
+  padding: 0 1rem;
 }
 
-main {
-  max-width: 600px;
-  background: #1e1e1e;
-  padding: 3rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-  border: 1px solid #444;
+header h1 {
+  font-weight: normal;
+  font-size: 2.8rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  margin-bottom: 1rem;
-  color: #f0a500; 
-  text-transform: uppercase;
-  text-shadow: 1px 1px 3px #bb7a00;
+hr {
+  border: none;
+  border-top: 1.5px solid #000;
+  margin: 0 0 2rem 0;
+  width: 100%;
 }
 
-.intro {
-  font-size: 1.25rem;
-  font-style: italic;
-  color: #bbb;
-  max-width: 450px;
-  margin: 0 auto;
-  text-shadow: 0 1px 2px #222;
+main section {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-/* Subtle interactive effect */
-main:hover {
-  box-shadow: 0 12px 45px rgba(240, 165, 0, 0.6);
-  border-color: #f0a500;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+/* Optional: subtle letter spacing in paragraphs for that LaTeX feel */
+main section p {
+  letter-spacing: 0.02em;
+}
+
+/* Links styled minimal, black */
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #555;
+  outline: none;
 }
