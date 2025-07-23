@@ -2,16 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Additional project-specific styles */
+    .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+    }
+    .project h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+    .project-links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0066cc;
+    }
+  </style>
 </head>
 <body>
-  <h1>About Me</h1>
+  <header>
+    <h1>About Me</h1>
+  </header>
+
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Me</a> |
+    <a href="index.html">Home</a>
+    <a href="about.html"><b>About Me</b></a>
     <a href="projects.html">Projects</a>
+    <a href="learning.html">What I'm Learning</a>
+    <hr>
   </nav>
-  <p>This page is about me.</p>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQFe206ylR2A4A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730061387710?e=2147483647&v=beta&t=LkAJv8KSRiHWO7Mko322dkDdj29sOCH04Vzc1XQUpmM" alt="Train Tracker App Screenshot" width="300">
+      <p>Hi, I'm Robert!</p>
+      <div class="project-links">
+        <a href="https://github.com/roberthalpern/" target="_blank">View Code</a>
+      </div>
+    </div>
+
 </body>
+  <footer>
+    <p style="display: flex; justify-content: space-between">
+      <span>Last updated: July 2025</span>
+      <span>Built with plain HTML & CSS</span>
+    </p>
+  </footer>
 </html>

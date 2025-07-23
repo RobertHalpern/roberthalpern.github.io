@@ -4,24 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Robert Halpern</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <header>
+    <img src="https://study.com/cimages/multimages/16/bjt1.png" style="float:right;width:175px;height:95.5px;margin:15px 10px"> 
     <h1>Robert Halpern</h1>
-    <hr />
-  </header>
 
+    <nav>
+      <a href="index.html"><b>Home</b></a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="learning.html">What I'm Learning</a>
+      <a href="https://github.com/roberthalpern/" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" height=32 width="32" style="margin:-8px 0px">
+      </a>
+      <a href="https://www.linkedin.com/in/robert-halpern" target="_blank">
+        <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn" height=32 width="32" style="margin:-8px 0px">
+      </a>
+    </nav>
+    <hr/>
+  </header>
+  
   <main>
     <section>
-      <p>Welcome to my GitHub Pages site.</p>
-    </section>
+      <p>Welcome. Undergraduate Student @ Northeastern University. 
+        <br> See my work:
+      </p>
+  </section>
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="project-card">
+        <div class="project-title">Smart Navigation Hat - 2025</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYB1Th-XnK2Xpv7g4-NgsWG7dgOXjUJYX0Pw&s" style="float:right;margin:-80px 10px">
+        <p>A tool which uses LiDAR for object detection and processes camera data with Gemini LLM for precise object recognition. Built with Arduino, Pi and Python.</p>
+        <a href="/projects.html">View project →</a>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-title">NYC Subway Capacity Tracker - 2024</div>
+        <img src="/images/traintracker.png" style="float:right;margin:-35px 5px;width:250px; height 195px">
+        <p>A mockup program that uses cameras and object detection ML to count capacity on vehicles, mapping passenger loads with live train positions using MTA GTFS.</p>
+        <a href="/projects.html">View project →</a>
+      </div>
 
-      <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Me</a> |
-    <a href="projects.html">Projects</a>
-  </nav>
+      <h2>Contact</h2>
+      <p>Feel free to reach out via <a href="mailto:PUT IN EMAIL LATER">email</a> or connect with me on <a href="#">GitHub</a>.</p>
+      <div class="project-card"></div>
+      
+    </section>
+    
   </main>
+
+  <footer>
+    <p style="display: flex; justify-content: space-between">
+      <span>Last updated: July 2025</span>
+      <span>Built with plain HTML & CSS</span>
+    </p>
+  </footer>
 </body>
 </html>

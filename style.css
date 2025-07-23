@@ -1,4 +1,4 @@
-/* Base reset */
+/* style.css */
 *,
 *::before,
 *::after {
@@ -6,47 +6,103 @@
 }
 
 body {
-  margin: 3rem auto;
+  font-family: 'Crimson Pro', serif;
   max-width: 700px;
-  font-family: 'Times New Roman', Times, serif;
+  margin: 1em auto;
+  padding: 0 1em;
   color: #000;
   background: #fff;
-  line-height: 1.4;
-  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+header {
+  text-align: left;
+  margin-bottom: 1em;
 }
 
 header h1 {
-  font-weight: normal;
-  font-size: 2.8rem;
-  margin-bottom: 0.25rem;
-  letter-spacing: 0.05em;
+  font-size: 2.5em;
+  margin-bottom: 0;
 }
 
 hr {
   border: none;
-  border-top: 1.5px solid #000;
-  margin: 0 0 2rem 0;
-  width: 100%;
+  border-top: 1px solid #000;
+  margin: 0.5em 0 1.5em 0;
 }
 
-main section {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+nav {
+  margin-top: 2em;
+  font-size: 1em;
 }
 
-/* Optional: subtle letter spacing in paragraphs for that LaTeX feel */
-main section p {
-  letter-spacing: 0.02em;
-}
-
-/* Links styled minimal, black */
-a {
+nav a {
   color: #000;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+nav a:hover {
   text-decoration: underline;
 }
 
-a:hover,
-a:focus {
+section {
+  margin-bottom: 1em;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.8em;
   color: #555;
-  outline: none;
+  border-top: 1px solid #000;
+  padding-top: 1em;
+}
+
+.project-card {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #eee;
+}
+
+.project-card:last-child {
+  border-bottom: none;
+}
+
+.project-title {
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+
+/* Additional styles for projects.html */
+.project {
+  margin-bottom: 2em;
+}
+
+.project h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5em 0;
+  border: 1px solid #eee;
+}
+
+.project-links a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* Flex utility for footer */
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
 }
