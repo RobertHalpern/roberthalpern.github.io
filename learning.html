@@ -6,7 +6,6 @@
   <title>Learning</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Additional project-specific styles */
     .project {
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -14,26 +13,31 @@
       margin: 20px 0;
       background-color: #f9f9f9;
     }
-    .project h2 {
+
+    .til-log {
+      padding: 1em;
+      border-left: 4px solid #000;
+      background-color: #fdfdfd;
+      margin: 2em 0;
+    }
+
+    .til-log h2 {
+      font-size: 1.8em;
       margin-top: 0;
-      color: #333;
     }
-    .project img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-      margin: 10px 0;
+
+    .til-log ul {
+      padding-left: 1.2em;
     }
-    .project-links a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0066cc;
+
+    .til-log li {
+      margin-bottom: 0.75em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>About Me</h1>
+    <h1>What I'm Learning</h1>
   </header>
 
   <nav>
@@ -44,21 +48,32 @@
     <hr>
   </nav>
 
-  <div class="projects-container">
-    <!-- Project 1 -->
-    <div class="project">
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQFe206ylR2A4A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730061387710?e=2147483647&v=beta&t=LkAJv8KSRiHWO7Mko322dkDdj29sOCH04Vzc1XQUpmM" alt="Train Tracker App Screenshot" width="300">
-      <p>Hi, I'm Robert!</p>
-      <div class="project-links">
-        <a href="https://github.com/roberthalpern/" target="_blank">View Code</a>
-      </div>
+  <section class="project">
+    <img src="/images/learning.png" alt="Profile Picture" width="600">
+    <p>I like learning, and am always trying to learn something. Here's what I'm up to:</p>
+    <div class="project-links">
+      <a href="https://github.com/roberthalpern/" target="_blank">View Code</a>
     </div>
+  </section>
 
-</body>
+  <section class="til-log">
+    <h2>Today I learned:</h2>
+    <ul>
+      <li><strong>07-31:</strong> ... (check again soon!)... </li>
+      <li><strong>07-30:</strong> how mechanics of a dishwasher work, how each cycle works and what temperatures are used during each.</li>
+      <li><strong>07-29:</strong> how to safely test appliances, including how GFCI outlets act as circuit breakers, and how to remove rust!</li>
+      <li><strong>07-28:</strong> how biasing MOSFET and BJT transistors differ (Need to elaborate!). </li>
+      <li><strong>07-27:</strong> how to do combinatorics (discrete exam)</li>
+      <!-- ADD NEW ENTRIES BELOW THIS LINE -->
+      <!-- <li><strong>YYYY-MM-DD:</strong> Your new fact here.</li> -->
+    </ul>
+  </section>
+
   <footer>
-    <p style="display: flex; justify-content: space-between">
+    <p class="flex-space-between">
       <span>Last updated: July 2025</span>
       <span>Built with plain HTML & CSS</span>
     </p>
   </footer>
+</body>
 </html>
