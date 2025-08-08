@@ -5,31 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Additional project-specific styles */
-    .project {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px 0;
-      background-color: #f9f9f9;
-    }
-    .project h2 {
-      margin-top: 0;
-      color: #333;
-    }
-    .project img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-      margin: 10px 0;
-    }
-    .project-links a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0066cc;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -44,34 +19,41 @@
     <hr>
   </nav>
 
-  <div class="projects-container">
-    <!-- Project 1 -->
-    <div class="project">
-      <h2>Train Tracker App</h2>
-      <img src="/images/traintracker.png" alt="Train Tracker App Screenshot" width="300">
-      <p>A real-time application that tracks train locations and provides arrival predictions using public transit APIs.</p>
-      <div class="project-links">
-        <a href="https://github.com/RobertHalpern/MTA-Load-Capacity-Project" target="_blank">View Code</a>
-        <!--*<a href="https://github.com/RobertHalpern/MTA-Load-Capacity-Project" target="_blank">Live Demo (BROKEN ATM)</a> -->
-      </div>
-    </div>
+  <div class="card"> More: <a href="amplifiers.html">Amplifiers</a></div>
 
-    <!-- Project 2 -->
-    <div class="project">
-      <h2>Personal Site (HTML, CSS)</h2>
-      <p>You're here! Showcasing my projects and programming.
-        <br> Designed in HTML and CSS.
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/roberthalpern/roberthalpern.github.io" target="_blank">View Code</a>
-      </div>
+  <!-- Project 1 -->
+  <div class="card project">
+    <h2 class="section-title">Subway Load Capacity Tracker</h2>
+    <img src="/images/traintracker.png" alt="Train Tracker App Screenshot">
+    <p>A real-time application that tracks train locations and provides arrival predictions using public transit APIs.</p>
+    <div class="project-links">
+      <a href="https://github.com/RobertHalpern/MTA-Load-Capacity-Project" target="_blank">View Code</a>
     </div>
-
   </div>
 
+  <!-- Project 2 -->
+  <div class="card project">
+    <h2 class="section-title">🌐 Personal Website</h2>
+    <img src="/images/site-preview.png" alt="Screenshot of site will be added w/ more progress done!">
+    <p>You're here! Showcasing my projects and programming.</p>
+    <div class="project-links">
+      <a href="https://github.com/roberthalpern/roberthalpern.github.io" target="_blank">View Code</a>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <!-- <div class="card project">
+    <h2 class="section-title">📻 DIY AM Transceiver</h2>
+    <img src="/images/amradio.jpg" alt="Prototype of AM transceiver">
+    <p>A hands-on hardware project to build a simple AM radio circuit from scratch. Helped me understand analog amplification, filters, and antenna matching. It also pushed me to think about electromagnetic interference and grounding.</p>
+    <div class="project-links">
+      <a href="https://github.com/roberthalpern" target="_blank">Coming Soon</a>
+    </div>
+  </div> -->
+
   <footer>
-    <p style="display: flex; justify-content: space-between">
-      <span>Last updated: July 2025</span>
+    <p class="flex-space-between">
+      <span>Last updated: August 2025</span>
       <span>Built with plain HTML & CSS</span>
     </p>
   </footer>

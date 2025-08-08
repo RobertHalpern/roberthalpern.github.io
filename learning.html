@@ -14,6 +14,16 @@
       background-color: #f9f9f9;
     }
 
+        /* Card layout for content blocks */
+    .card-log {
+      background: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2em;
+      border-left: 4px solid #000;
+    }
+
     .til-log {
       padding: 1em;
       border-left: 4px solid #000;
@@ -33,6 +43,8 @@
     .til-log li {
       margin-bottom: 0.75em;
     }
+
+    
   </style>
 </head>
 <body>
@@ -48,18 +60,23 @@
     <hr>
   </nav>
 
-  <section class="project">
-    <img src="/images/learning.png" alt="Profile Picture" width="600">
+  <section class="card">
+    <img src="/images/learning.png" alt="Markup for this site" width="600">
     <p>I like learning, and am always trying to learn something. Here's what I'm up to:</p>
     <div class="project-links">
       <a href="https://github.com/roberthalpern/" target="_blank">View Code</a>
     </div>
   </section>
 
-  <section class="til-log">
+  <section class="card-log">
     <h2>Today I learned:</h2>
     <ul>
-      <li><strong>07-31:</strong> ... (check again soon!)... </li>
+      <li><strong>08-08:</strong> no more churro vendors in GC and TS  
+      <li><strong>08-06:</strong> how to invest ETFs: benefits over individual stocks and purpose of existence </li>
+      <li><strong>08-04:</strong> how VOR-ILS works and how to use the Horizontal Situation Indicator (HSI) in a plane. Also researched HF transcievers (Yaesu DX10 and Kenwood TS-590) and how they operate, alongside finding the best way to mount a dipole antenna in my apartment.</li>
+      <li><strong>08-03:</strong> how to eat a tlayuda at La Guelaguetza (plus more Oaxacan street food) </li>
+      <li><strong>08-02:</strong> how to unstick folding mechanism on old scooter (spring was caught on something, & removed grease blocking motion) </li>
+      <li><strong>08-01:</strong> how to diagnose broken woozoo fan circuit board using multimeter (found a short from a blown 103k250 plastic capacitor), plan to replace and verify if this is root of issue. <br><strong> Edit: </strong>film cap, not plastic.</li>
       <li><strong>07-30:</strong> how mechanics of a dishwasher work, how each cycle works and what temperatures are used during each.</li>
       <li><strong>07-29:</strong> how to safely test appliances, including how GFCI outlets act as circuit breakers, and how to remove rust!</li>
       <li><strong>07-28:</strong> how biasing MOSFET and BJT transistors differ (Need to elaborate!). </li>
@@ -71,7 +88,7 @@
 
   <footer>
     <p class="flex-space-between">
-      <span>Last updated: July 2025</span>
+      <span>Last updated: August 2025</span>
       <span>Built with plain HTML & CSS</span>
     </p>
   </footer>

@@ -3,33 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About</title>
+  <title>About Me</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Additional project-specific styles */
-    .project {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px 0;
-      background-color: #f9f9f9;
-    }
-    .project h2 {
-      margin-top: 0;
-      color: #333;
-    }
-    .project img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-      margin: 10px 0;
-    }
-    .project-links a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0066cc;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -44,24 +19,30 @@
     <hr>
   </nav>
 
-  <div class="projects-container">
-    <!-- Project 1 -->
-    <div class="project">
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQFe206ylR2A4A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730061387710?e=2147483647&v=beta&t=LkAJv8KSRiHWO7Mko322dkDdj29sOCH04Vzc1XQUpmM" alt="Train Tracker App Screenshot" width="300">
-      <p>Hi, I'm Robert!</p>
-      <p>I am a second year studying Computer Engineering and Computer Science at Northeastern University, in Boston.</p>
-      <p>More info here, including what I am working on, to come!</p>
-      <p>I am not including my resume/email for privacy. Please message on LinkedIn!</p>
-      <div class="project-links">
-        <a href="https://github.com/roberthalpern/" target="_blank">View Code</a>
-      </div>
-    </div>
+  <div class="card">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQFe206ylR2A4A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730061387710?e=2147483647&v=beta&t=LkAJv8KSRiHWO7Mko322dkDdj29sOCH04Vzc1XQUpmM" alt="Robert Halpern" class="profile-pic">
 
-</body>
+    <p>Hello there!, I'm <strong>Robert,</strong> a second-year Computer Engineering and CS student at Northeastern University, Boston.</p>
+
+    <p class="section-title">What I’m learning right now</p>
+    <p>Currently learning basic circuit design, including how to create simple RF circuits like an <strong>AM transceiver</strong>.</p>
+
+    <p class="section-title">Outside the classroom</p>
+    <p>I am interested in urban planning and public transportation, having created short films online regarding the technical and social aspects of transportation, including the design of trains, their routes and their history.</p>
+
+    <p class="section-title">Amateur radio (and DSP)</p>
+    <p>To learn more about RF engineering and digital signal processing, I am a licensed ham radio operator (callsign KE2EGT) 📻</p>
+ 
+    <p class="section-title">Contact</p>
+    <p>I don’t post my email for privacy, but feel free to reach out to me via <a href="https://www.linkedin.com/in/roberthalpern" target="_blank">LinkedIn</a>.</p>
+  </div>
+
+
   <footer>
-    <p style="display: flex; justify-content: space-between">
-      <span>Last updated: July 2025</span>
+    <p class="flex-space-between">
+      <span>Last updated: August 2025</span>
       <span>Built with plain HTML & CSS</span>
     </p>
   </footer>
+</body>
 </html>

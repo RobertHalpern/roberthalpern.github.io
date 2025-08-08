@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amplifiers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .content-block {
+      margin-bottom: 2em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #eee;
+    }
+
+    .content-block:last-child {
+      border-bottom: none;
+    }
+
+    .content-block img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1em 0;
+      border: 1px solid #ccc;
+    }
+
+    .content-block p {
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+
+    h2.section-title {
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amplifiers</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="learning.html">What I'm Learning</a>
+    <a href="amplifiers.html"><b>Amplifiers</b></a>
+    <hr>
+  </nav>
+
+  <section class="content-block">
+    <h2 class="section-title">Project Goal and Purpose</h2>
+    <p> Amplification is necessary for interpreting radio waves, as the audio playback volume is limited by the signal strength of <b>carrier waves</b>.  </p>
+    <p> The principle is to "mix" the weak received radio wave with an external power source. <b>Bipolar Junction Transistors</b> (BJTs) can take an input signal and, if the <b>current</b> at the <b>base</b> terminal is above a certain value (a cutoff), the base current (Ib) controls the collector current (Ic) proportionally. The ratio between Ic and Ib is the gain (amount amplified). </p>
+
+    <p> Essential notes: </p>
+    <p> - BJTs don’t turn on just because we push a current into the base. Instead, voltage at base must be greater than voltage at emitter must be about 0.7 V. </p>
+    
+    <p>- Once that voltage drop achieved, current flows, and the transistor can amplify. </p>
+
+    <p>- To get voltage drop, we can use biasing. Resistors (usually in the base and collector circuits) will force a reduction in current and a drop voltage, so the transistor stays in its active region, not off.</p>
+    
+    <p>As an exercise, I built my own simple class A amplifier in Falstad. I picked a 5V input (i.e from an iPhone lightning port) and another 5V Vcc. </p>
+    <p> I used <a href="https://electronics.stackexchange.com/questions/105396/bjt-class-a-amplifier-help-calculating-resistor-values-r-c-and-r-e">this post</a> as reference for component values and calculations:</p>
+    
+    <img src="https://www.electronics-tutorials.ws/wp-content/uploads/2013/07/amp21.gif?fit=398%2C297" alt="Basic amplifier diagram">
+  </section>
+
+  <footer>
+    <p class="flex-space-between">
+      <span>Last updated: August 2025</span>
+      <span>Built with plain HTML & CSS</span>
+    </p>
+  </footer>
+</body>
+</html>
