@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <h1>My Projects</h1>
@@ -19,22 +21,53 @@
     <hr>
   </nav>
 
-  <div class="card"> More: <a href="amplifiers.html">Amplifiers</a></div>
+  <!-- <div class="card"> More: <a href="amplifiers.html">Amplifiers</a>, <a href="amtransceiver.html">AM transmitter &
+      receiver</a></div> -->
 
-  <!-- Project 1 -->
+  <!-- RF Circuits -->
   <div class="card project">
-    <h2 class="section-title">Subway Load Capacity Tracker</h2>
-    <img src="/images/traintracker.png" alt="Train Tracker App Screenshot">
-    <p>A real-time application that tracks train locations and provides arrival predictions using public transit APIs.</p>
+    <div class="project-header">
+      <h2 class="section-title">Radio Frequency Circuit Design</h2>
+      <p>August, 2025</p>
+    </div>
+    For detailed reading on theory & design: <a href="amplifiers.html">Amplifiers</a>, <a href="amtransceiver.html">AM transmitter &
+      receiver</a>
+
+    <img src="/images/RF/transmitterannotated.png" alt="AM transmitter"
+      style="float:right;width:350px;margin:20x 0px">
+    <p>130 kHz (Low Frequency) AM transmitter using 555 timer to generate square waves, used to modulate amplitude using audio input signal. Runs 9V, 0.01A. →</p>
+    <img src="/images/RF/amplifierannotated.png" alt="Class A amp"
+      style="float:right;width:750px;margin:0px 0px">
+    <p>Small, speaker driving Class A common emitter amp. Originally planned a 4 resistor biasing network but decided to
+      try this instead. ↓</p>
+    <p>Amp works but results are bad - intend to retry the original biasing plan, additionally with wired earbuds instead of a speaker, as quality was
+      bad. </p>
+  </div>
+
+
+  <div class="card project">
+    <div class="project-header">
+      <h2 class="section-title">Subway Load Capacity Tracker</h2>
+      <p>April-May, 2024</p>
+    </div>
+    <img src="/images/traintracker.png" alt="Train Tracker App Screenshot" style="width:280px">
+    <img src="/images/traintrackersite.png" alt="Train Tracker App Screenshot" style="width:310px">
+    <p>A real-time application that tracks train locations and provides arrival predictions using public transit APIs.
+    </p>
+    <p>Gained experience using Google's static & realtime GTFS and implementing object detection machine learning models (Ultralytics).</p>
+    <p>Discontinued due to lack of inside hardware support on trains (AKA, ahead of the times).</p>
     <div class="project-links">
       <a href="https://github.com/RobertHalpern/MTA-Load-Capacity-Project" target="_blank">View Code</a>
     </div>
   </div>
 
-  <!-- Project 2 -->
+
   <div class="card project">
-    <h2 class="section-title">🌐 Personal Website</h2>
-    <img src="/images/site-preview.png" alt="Screenshot of site will be added w/ more progress done!">
+    <div class="project-header">
+      <h2 class="section-title">roberthalpern.github.io</h2>
+      <p>August, 2025</p>
+    </div>
+    <img src="/images/site-preview.png" alt="SS of site!">
     <p>You're here! Showcasing my projects and programming.</p>
     <div class="project-links">
       <a href="https://github.com/roberthalpern/roberthalpern.github.io" target="_blank">View Code</a>
@@ -58,4 +91,5 @@
     </p>
   </footer>
 </body>
+
 </html>

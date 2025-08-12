@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AM Transmitter</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .content-block {
+      margin-bottom: 2em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #eee;
+    }
+
+    .content-block:last-child {
+      border-bottom: none;
+    }
+
+    .content-block img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1em 0;
+      border: 1px solid #ccc;
+    }
+
+    .content-block p {
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+
+    h2.section-title {
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AM Transmitter</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="learning.html">What I'm Learning</a>
+    <a href="amtransceiver.html"><b>AM Transmitter</b></a>
+    <hr>
+  </nav>
+
+  <section class="content-block">
+    <h2 class="section-title">Project Goal and Purpose</h2>
+    <p> Introduce myself to basic radio frequency (RF) design with a simple <strong> amplitude modulator and radio transmitter, </strong> based on a 555 timer generating a square carrier wave.</p>
+
+    <h3 class="section-title">AM Theory</h3>
+    <p> The basis of the transmitter is creating a predictable carrier wave which is higher in amplitude than the signal, and using the signal to <strong>modulate</strong> (to impose original audio signal on) the carrier wave.</p>
+    <p> A benefit of using a carrier wave is we can send lower frequency audio signals (i.e human speaking in the hundreds of Hz) on higher frequencies (even VLF is from 3 kHz - 30 kHz), which allows radio travel of longer travel distances.</p>
+    
+    <h3 class="section-title">Circuit Design</h3> 
+    <p> My design was based on designs and calculations from <a href="https://www.electronicsforu.com/electronics-projects/low-range-radio-transmitter">electronicsforu</a>, which used the control voltage pin of the 555 IC to receive audio signal, and a 9V battery connected to some resistors to tune the frequency of the generated carrier wave </p>
+
+    <p> I made a few changes to the design. First, I replaced the condenser mic with an audio signal from my laptop, with the circuit connected to only the ring and sleeve (right channel and ground) of the 3.5mm port, to get mono audio.</p>
+
+    <p> I also added a 100u ceramic cap to the "antenna" to act as a high pass filter for interference coming from the 60V DC. As I did not have the equipment to listen (AM receiver capable of 130 kHz), I left off the 2-3m copper wire antenna and just measured signal off the end of a jumper wire.</p>
+
+    <p> The projected frequency of this circuit, using the same resistor values, should have been around 500-600 kHz. Unfortunately, potentially due to resistance in the breadboard I used, old capacitors, or DC coupling, I only received 131 kHz from the transmitter. </p>
+    
+    <img src="https://electronicsforu.com/wp-contents/uploads/2016/05/CD8_1.jpg" alt="Simple transmitter circuit">
+  </section>
+
+  <footer>
+    <p class="flex-space-between">
+      <span>Last updated: August 2025</span>
+      <span>Built with plain HTML & CSS</span>
+    </p>
+  </footer>
+</body>
+</html>

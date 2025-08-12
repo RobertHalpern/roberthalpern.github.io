@@ -130,6 +130,8 @@ footer {
   border-radius: 50%;
   width: 150px;
   margin-bottom: 1em;
+  border-radius: 25px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
 /* Section headings inside card */
@@ -147,3 +149,37 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Project title + date in one line, date right-aligned */
+.project-header {
+  display: flex;                 /* turn it into a flex container */
+  justify-content: space-between;/* put title on left, date on right */
+  align-items: center;            /* vertically center both */
+}
+
+.project-header h2 {
+  font-size: 1.5em; /* bigger than date */
+  margin: 0;
+}
+
+.project-header p {
+  margin: 0;
+  font-size: 1em; /* smaller date */
+  color: #666;    /* subtle look */
+}
+
+/* About page header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* increased space between image and text */
+}
+
+.fancy-greeting {
+  font-size: 4rem;
+  font-family: 'Playwrite Australia NSW', cursive;
+  margin: 0;
+  font-weight: 700; /* bolder style from the font */
+  align-items: right;
+}
+
