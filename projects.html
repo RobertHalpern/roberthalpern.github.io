@@ -23,9 +23,8 @@
   </nav>
 
   <nav>
-    <a href="amtransceiver.html"><b>Transceiver</b></a>
+    <a href="amtransceiver.html">Transceiver</a>
     <a href="amplifiers.html">Amplifiers</a>
-
     <hr>
   </nav>
 
@@ -38,19 +37,38 @@
       <h2 class="section-title">Radio Frequency Circuit Design</h2>
       <p>August, 2025</p>
     </div>
-    For detailed reading on theory & design: <a href="amplifiers.html">Amplifiers</a>, <a href="amtransceiver.html">AM transmitter &
-      receiver</a>
+    For detailed reading on theory & design: <a href="amtransceiver.html">AM transmitter</a>, <a href="amplifiers.html">Amplifiers</a>
 
     <img src="/images/RF/transmitterannotated.png" alt="AM transmitter"
       style="float:right;width:350px;margin:20x 0px">
-    <p>130 kHz (Low Frequency) AM transmitter using 555 timer to generate square waves, used to modulate amplitude using audio input signal. Runs 9V, 0.01A. →</p>
-    <img src="/images/RF/amplifierannotated.png" alt="Class A amp"
+    <p>130 kHz (Low Frequency) AM transmitter, based on 555 timer: </p> 
+    <p>Generates square waves which are filtered and then used to modulate input audio signal.</p>
+    <p>Added DC filtering for antenna, replaced mic input for 3.5mm. </p>
+    <p>Created schematics and a PCB.</p>
+    <!-- <img src="/images/RF/transmitterannotated.png" alt="AM transmitter"
+    style="float:right;width:350px;margin:20x 0px"> -->
+    <!-- <img src="/images/RF/amplifierannotated.png" alt="Class A amp"
       style="float:right;width:750px;margin:0px 0px">
     <p>Small, speaker driving Class A common emitter amp. Originally planned a 4 resistor biasing network but decided to
       try this instead. ↓</p>
     <p>Amp works but results are bad - intend to retry the original biasing plan, additionally with wired earbuds instead of a speaker, as quality was
-      bad. </p>
+      bad. </p> -->
   </div>
+
+
+  <div class="card project">
+    <div class="project-header">
+      <h2 class="section-title">Smart Navigation Hat</h2>
+      <p>Feb-May, 2025</p>
+    </div>
+    <img src="/images/vibrationmotors.jpg" alt="SS of site!">
+    <p>Embedded project, implementing LiDAR sensing and an image model from Gemini for object detection and navigation.  </p>
+    <p>Experimented using ESP32 and sending camera data serially over I2C, as well as over IP network connection; resorted to Pi 3B for better processing speeds. </p>
+    <div class="project-links">
+      <a href="https://github.com/RobertHalpern/bathat" target="_blank">View Code</a>
+    </div>
+  </div>
+
 
 
   <div class="card project">
@@ -69,11 +87,10 @@
     </div>
   </div>
 
-
   <div class="card project">
     <div class="project-header">
       <h2 class="section-title">roberthalpern.github.io</h2>
-      <p>September, 2025</p>
+      <p>Ongoing!</p>
     </div>
     <img src="/images/site-preview.png" alt="SS of site!">
     <p>You're here! Showcasing my projects and programming.</p>

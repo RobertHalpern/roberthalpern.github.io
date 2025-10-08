@@ -183,3 +183,15 @@ a:hover {
   align-items: right;
 }
 
+.projects-container {
+  display: flex;
+  gap: 2em;           /* space between cards */
+  flex-wrap: wrap;    /* allow wrapping on smaller screens */
+  justify-content: center;
+}
+
+.projects-container .project {
+  flex: 1 1 300px;    /* cards shrink/grow but never smaller than 300px */
+  max-width: 500px;   /* keeps them from being too wide */
+}
+
