@@ -195,3 +195,8 @@ a:hover {
   max-width: 500px;   /* keeps them from being too wide */
 }
 
+
+
+img {
+  border-radius: 16px;
+}
