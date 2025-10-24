@@ -43,9 +43,7 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
     <a href="projects.html">Projects</a>
-    <a href="learning.html">What I'm Learning</a>
     <a href="amplifiers.html"><b>BatHat</b></a>
     <hr>
   </nav>
@@ -61,11 +59,23 @@
     <p> Navigation for the visually impaired.</p>
     
     <img src="/images/vibrationmotors.jpg" alt="Basic amplifier diagram">
+
+    <p> Initially attempted to complete project entirely on an ESP32 for the ability to control image capture, processing (or wireless transfer to remote processing solution) and buzzer feedback on one microcontroller. Learned about ESP32 hardware and programming for usage with I2C data transfer for camera control and data transfer and later through the ESP32 network manager.</p>
+
+    <p> Switched to Raspberry Pi for camera capture and processing as the program required more memory to run quickly. Additionally used an Arduino nano for buzzer, servo and LiDAR control.</p>
+
+    See the ESP32 capturing an image and wirelessly communicating from itself to my laptop, running the image processing program, below:
+
+    <img src="/images/bathat/bathatArdcam.jpg" alt="Arducam used on BatHat with ESP32">
+
+    <p> Images of final product and Pi coming to website soon. Check again soon. </p>
+
+    <p> See project code on my GitHub.</p>
   </section>
 
   <footer>
     <p class="flex-space-between">
-      <span>Last updated: August 2025</span>
+      <span>Last updated: October 2025</span>
       <span>Built with plain HTML & CSS</span>
     </p>
   </footer>
