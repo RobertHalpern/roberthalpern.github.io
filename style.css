@@ -5,19 +5,62 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #555555;
+  --border: #000000;
+  --border-soft: #eeeeee;
+  --link: #0044aa;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="dark"] {
+  --bg: #121212;
+  --text: #e8e8e8;
+  --muted: #a3a3a3;
+  --border: #444444;
+  --border-soft: #333333;
+  --link: #7fb3ff;
+  --card-bg: #1c1c1c;
+  --card-shadow: rgba(0, 0, 0, 0.45);
+}
+
 body {
   font-family: 'Crimson Pro', serif;
   max-width: 700px;
   margin: 2em auto; /* increased top/bottom margin */
   padding: 0 1em;
-  color: #000;
-  background: #fff;
+  color: var(--text);
+  background: var(--bg);
   line-height: 1.6;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
   text-align: left;
   margin-bottom: 1em;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0.3em 0.7em;
+  font-size: 1.1em;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--border-soft);
 }
 
 header h1 {
@@ -33,7 +76,7 @@ h2 {
 
 hr {
   border: none;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--border);
   margin: 0.5em 0 1.5em 0;
 }
 
@@ -43,7 +86,7 @@ nav {
 }
 
 nav a {
-  color: #000;
+  color: var(--text);
   text-decoration: none;
   margin-right: 1em;
 }
@@ -59,8 +102,8 @@ section {
 footer {
   margin-top: 3em;
   font-size: 0.8em;
-  color: #555;
-  border-top: 1px solid #000;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
   padding-top: 1em;
 }
 
@@ -76,7 +119,7 @@ footer {
 .project-card {
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .project-card:last-child {
@@ -103,11 +146,11 @@ footer {
   max-width: 100%;
   height: auto;
   margin: 0.5em 0;
-  border: 1px solid #eee;
+  border: 1px solid var(--border-soft);
 }
 
 .project-links a {
-  color: #000;
+  color: var(--text);
   text-decoration: none;
   margin-right: 1em;
 }
@@ -118,11 +161,12 @@ footer {
 
 /* Card layout for content blocks */
 .card {
-  background: #fff;
+  background: var(--card-bg);
   padding: 2em;
   border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 14px var(--card-shadow);
   margin-bottom: 2em;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Profile image inside card */
@@ -131,19 +175,49 @@ footer {
   width: 150px;
   margin-bottom: 1em;
   border-radius: 25px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 14px var(--card-shadow);
 }
 
 /* Section headings inside card */
 .section-title {
   font-size: 1.3em;
   margin-top: 0em;
-  color: #444;
+  color: var(--muted);
 }
 
 /* Link colors */
 a {
-  color: #0044aa;
+  color: var(--link);
+}
+
+/* Shared content-block styling (project detail pages) */
+.content-block {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.content-block:last-child {
+  border-bottom: none;
+}
+
+.content-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 1em 0;
+  border: 1px solid var(--border-soft);
+}
+
+.content-block p {
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+h2.section-title {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+  color: var(--text);
 }
 
 a:hover {
@@ -165,7 +239,7 @@ a:hover {
 .project-header p {
   margin: 0;
   font-size: 1em; /* smaller date */
-  color: #666;    /* subtle look */
+  color: var(--muted);    /* subtle look */
 }
 
 /* About page header */

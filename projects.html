@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="theme.js"></script>
 </head>
 
 <body>
   <header>
     <h1>My Projects</h1>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
   </header>
 
   <nav>
@@ -41,7 +43,7 @@
         Designed charging circuit for Lithium Polymer batteries, with USB-C input, based on TP4057 IC.
     
         <img src="/images/lipo/lipo.jpg" alt="Assembled PCB"
-          style="float:right;width:350px;margin:20x 0px">
+          style="float:right;width:350px;margin:20px 0px">
         <ul><li>Captured schematic and designed user interface </li>
         <li>Organized layout for PCBA design.</li></ul>
         Supports 3 Li-ion batteries per board, 500 mA per.
@@ -77,7 +79,7 @@
     For detailed reading on theory & design: <a href="amtransceiver.html">AM transmitter</a>, <a href="amplifiers.html">Amplifiers</a>
 
     <img src="/images/RF/transmitterannotated.png" alt="AM transmitter"
-      style="float:right;width:350px;margin:20x 0px">
+      style="float:right;width:350px;margin:20px 0px">
     <p>130 kHz (Low Frequency) AM transmitter, based on 555 timer: </p> 
     <p>Generates square waves which are filtered and then used to modulate input audio signal.</p>
     <p>Added DC filtering for antenna, replaced mic input for 3.5mm. </p>
